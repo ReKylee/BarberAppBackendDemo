@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ES2021", // Modern JS output (can be ESNext too)
+        "module": "CommonJS", // For Node.js (use 'ESNext' if ESM)
+        "rootDir": "./src", // Source folder
+        "outDir": "./dist", // Build output
+        "strict": true, // All strict type checks
+        "esModuleInterop": true, // Default interop for imports
+        "moduleResolution": "node", // Node module resolution
+        "resolveJsonModule": true, // Allow importing JSON files
+        "experimentalDecorators": true, // REQUIRED: decorators work
+        "emitDecoratorMetadata": true, // REQUIRED: decorator metadata
+        "forceConsistentCasingInFileNames": true, // Catch casing mismatches
+        "skipLibCheck": true, // Speeds up compilation
+        "sourceMap": true, // Helpful for debugging
+        "noImplicitReturns": true, // Enforce returns
+        "noUnusedLocals": true, // Catch unused vars
+        "noFallthroughCasesInSwitch": true // Safer switches
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
